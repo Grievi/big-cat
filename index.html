@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System | Demo</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="custom.css" type="text/css">
+
+</head>
+<body>
+   
+   
+    <div class="container-fluid">
+        <div class="row content bg-dark">
+            <div class="col-sm-4 bg-dark text-center text-white p-sm-0">
+                <form class="was-validation pl-sm-2 bg-primary form">
+                    
+                        <h1 class="display-4 text-center pb-3">Billing System Demo</h1>
+
+                    <div class="form-row pr-2">
+                      
+                        <input type="text" class='col-sm-7 mb-sm-2 form-control' id="order" name="order" placeholder="Place Your Order Here" required>
+                    </div>
+
+                    <br>
+                    
+                    <div class="form-row pr-2">
+                     
+                        <input type="number" class="col-sm-7 mb-sm-2 form-control" id="price" name="price" required placeholder="Price(e.g KES800)">
+                    </div> 
+
+                    <br>
+
+                    <div class="form-row pr-2 form-group">
+                     
+                        <input type="number" class="col-sm-7 mb-sm-2 form-control" id="quantity" name="quantity" required placeholder="Quantity(e.g 2)">
+
+
+                        <br>
+
+                        <select class="form-select" name="crust" id="crust-type" required>
+                            <option selected>Crust Type</option>
+                            <option value="crispy">crispy</option>
+                            <option value="stuffed">stuffed</option>
+                            <option value="gluten-free">gluten-free</option>
+                        </select>
+                        
+                    </div>
+                    
+                    <br>
+                    
+                        <button type="submit" class="btn btn-outline-danger mb-sm-3" id="add-btn">Add to Cart</button> 
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-outline-warning mb-sm-3" id="cart">View Cart</button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-outline-success mb-sm-3" id="total-price">View <strong>Total</strong>(Price)</button>
+                    
+                </form>
+
+                <div class="total bg-info hidden" id="total-div">
+                   
+                </div>
+            </div>
+    
+            <div class="col-sm-8 container-fluid hidden" id="list">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="app.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        </div>
+    </div>
+</body>
+</html>
