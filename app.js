@@ -100,19 +100,19 @@ const renderTotal = () => {
     {
         
         crustCost = 200;
-        alert('Cripsy!');
+        alert('Your order will be delivered after processing...');
 
     } else if (crustOptions.value === 'stuffed')
     {
 
         crustCost = 270;
-        alert('Stuffed!');
+        alert('Your order will be delivered after processing...');
 
     } else if (crustOptions.value === 'gluten-free')
     {
 
         crustCost = 300;
-        alert('Gluten-free!');
+        alert('Your order will be delivered after processing...');
 
     }
 
